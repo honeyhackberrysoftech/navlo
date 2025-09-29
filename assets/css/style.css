@@ -782,6 +782,19 @@ form#navloRegisterForm{
         padding: 0px 20px;
     }
 }
+@media (max-width: 320px) {
+    .navbar-brand img{
+        width: 100px;
+    }
+     .navbar{
+        padding: 20px 20px;
+        max-width: 320px;
+    }
+    .container{
+        max-width: 320px;
+        padding: 0px 20px;
+    }
+}
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
     *,
