@@ -52,6 +52,10 @@ body {
     overflow-x: hidden;
   font-family: "Nunito", sans-serif;
 }
+.container{
+    max-width: 1600px !important;
+    padding: 0px 40px;
+}
 .text-success{
     color: var(--oreng) !important;
 }
@@ -166,6 +170,28 @@ p{
     }
 }
 
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--light-color);
+}
 /* Navbar Styles */
 .navbar {
     transition: var(--transition);
@@ -233,9 +259,8 @@ button.navbar-toggler.collapsed{
   border: none;
 }
 /* Hero Section */
-.hero-section {
+/* .hero-section {
     position: relative;
-    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
     overflow: hidden;
     margin-top: 100px;
     margin-left: 100px;
@@ -263,14 +288,42 @@ button.navbar-toggler.collapsed{
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%); */
     z-index: 2;
 }
 
 .hero-section .container {
     z-index: 10;
+} */
+.hero-section{
+    background-image: url("../image/Hero-banner-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1660px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
+.hero-cantant{
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+    align-items: center;
 
+}
+.hero-text{
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 65px;
+}
+.hero-cantant p{
+    color: var(--light-color);
+}
+.hero-img{
+    padding: 20px 0px;
+}
+.oreng-text{
+    color: var(--oreng);
+}
 .feature-card {
     transition: var(--transition);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -497,7 +550,34 @@ button.navbar-toggler.collapsed{
     animation-delay: -2s;
     animation-duration: 5s;
 }
-
+.cta-section{
+    width: 1660px;
+    background-image: url("../image/cta-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 100px auto;
+    border-radius: 20px;
+    background-position: bottom;
+}
+.cta-cantant{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.cta-text{
+    padding: 70px 0px;
+}
+.cta-cantant h2{
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--light-color);
+}
+.cta-cantant p{
+    color: var(--light-color);
+}
+.cta-cantant .row .col-lg-4{
+    padding: 0px 8px;
+}
 /* Button Hover Effects */
 .btn {
     transition: var(--transition);
@@ -641,22 +721,42 @@ form#navloRegisterForm{
 
 @media (max-width: 1440px) {
     .navbar{
-        padding: 20px 20px;
+        padding: 20px 50px;
         max-width: 1440px;
     }
     .container-fluid.justify-content-space-between{
         padding: 0;
     }
     .hero-section{
-        padding: 0px;
-        margin: 0px;
+         padding: 0px;
+        margin: 0px auto;
+    }
+    .hero-text{
+        padding-left: 50px;
     }
     .container{
         max-width: 1440px;
-        padding: 0px 20px;
+        padding: 0px 80px;
+    }
+    .hero-section{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 100px;
+        background-position: bottom right;
+    }
+    .cta-section{
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 100px;
     }
 }
 @media (max-width: 1024px) {
+    h1{
+        font-size: 38px;
+    }
+    h3{
+        font-size: 30px;
+    }
     .container-fluid.justify-content-space-between{
         width: 100%;
         padding: 0;
@@ -667,11 +767,23 @@ form#navloRegisterForm{
     }
     .container{
         max-width: 1024px;
-        padding: 0px 20px;
+        padding: 0px 40px;
     }
     .about-us-cantant img{
         width: 100%;
     }
+    .vert-move{
+    width: 90%;
+}
+.hero-img{
+    text-align: end;
+}
+.cta-cantant h2{
+    font-size: 38px;
+}
+.about-us-cantant img{
+    width: 90%;
+}
 }
 @media (max-width: 768px) {
      .navbar{
@@ -683,7 +795,34 @@ form#navloRegisterForm{
     }
     .container{
         max-width: 768px;
-        padding: 0px 20px;
+        padding: 0px 25px;
+    }
+    .hero-section{
+        background-position: center;
+    }
+    .hero-cantant{
+        flex-direction: column;
+    }
+    .hero-text{
+        padding-left: 0px;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .hero-text p{
+        margin: 0 auto;
+    }
+    .hero-img{
+            align-self: end;
+    }
+    .about-us-cantant .col-lg-6{
+        text-align: center;
+    } 
+    .cta-cantant p{
+        font-size: 16px;
+    }
+    .cta-text{
+        padding: 30px 0px;
     }
     .display-2 {
         font-size: 2.5rem;
@@ -724,7 +863,27 @@ form#navloRegisterForm{
     .register-btn2{
         display: block;
     }
-    
+    .cta-img img{
+        width: 100%;
+    }
+    .cta-text a img{
+        width: 100%;
+    }
+    footer .row .col-md-12 ul{
+        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+        align-self: center;
+    } 
+    footer .row .col-md-12 {
+        text-align: center;
+    } 
+    footer .row .col-md-12 div{
+        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+        align-self: center;
+    } 
 }
 
 @media (max-width: 576px) {
@@ -772,6 +931,15 @@ form#navloRegisterForm{
     }
 }
 @media (max-width: 425px) {
+    h1{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
     .navbar-brand img{
         width: 100px;
     }
@@ -782,6 +950,27 @@ form#navloRegisterForm{
     .container{
         max-width: 425px;
         padding: 0px 20px;
+    }
+    .hero-text p{
+        width: 100% !important;
+        padding-bottom: 20px;
+    }
+    .cta-cantant{
+        flex-direction: column;
+    }
+    .cta-cantant h2{
+        font-size: 30px;
+    }
+    .cta-text{
+        text-align: center;
+    }
+    .cta-text a img{
+        width: 50%;
+        margin: 10px auto;
+    }
+    .nav-item{
+        text-align: center;
+        margin: 0 auto;
     }
 }
 @media (max-width: 320px) {
