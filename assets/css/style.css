@@ -65,6 +65,9 @@ body {
 p{
     font-size: 18px;
 }
+section{
+    overflow: hidden;
+}
 /* Utilities */
 .backdrop-blur {
     backdrop-filter: blur(10px);
@@ -258,6 +261,7 @@ button.navbar-toggler.collapsed{
     outline: none;
   border: none;
 }
+
 /* Hero Section */
 /* .hero-section {
     position: relative;
@@ -340,6 +344,9 @@ button.navbar-toggler.collapsed{
 }
 .about-us-cantant img{
     border-radius: 20px;
+}
+.check-list p img{
+    width: 20px;
 }
 /* .check-list .row p::before{
     content: url("");
