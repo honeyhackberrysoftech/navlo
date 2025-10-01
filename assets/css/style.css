@@ -341,14 +341,14 @@ button.navbar-toggler.collapsed{
 .about-us-cantant img{
     border-radius: 20px;
 }
-.check-list .row p::before{
+/* .check-list .row p::before{
     content: url("");
     padding: 20px;
     background-image: url(/assets/image/check.png);
     background-repeat: no-repeat;
     padding-right: 10px;
     background-position: center center;
-}
+} */
 /* Scroll Indicator */
 .scroll-indicator {
     animation: bounce 2s infinite;
