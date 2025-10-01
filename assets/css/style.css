@@ -342,7 +342,7 @@ button.navbar-toggler.collapsed{
     border-radius: 20px;
 }
 .check-list .row p::before{
-    content: url("..//assets/image/check.png");
+    content: url("/assets/image/check.png");
     padding-right: 10px;
 }
 /* Scroll Indicator */
