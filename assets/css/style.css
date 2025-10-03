@@ -701,7 +701,7 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--primary-color) !important;
+    /* color: var(--primary-color) !important; */
     transform: translateY(-2px);
 }
 
@@ -759,6 +759,12 @@ form#navloRegisterForm{
         width: 95%;
         margin: 0 auto;
         margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .about-us-cantant img{
+        width: 500px;
     }
 }
 @media (max-width: 1024px) {
@@ -867,6 +873,9 @@ form#navloRegisterForm{
     }
     .navbar-brand{
         width: 100px ;
+    }
+    .floating-element{
+        display: none;
     }
     .register-btn1{
         display: none;
