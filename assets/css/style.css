@@ -279,41 +279,7 @@ button.navbar-toggler.collapsed {
 }
 
 /* Hero Section */
-/* .hero-section {
-    position: relative;
-    overflow: hidden;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border-radius: 20px;
-    height: 800px;
-}
 
-.hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../image/hero-bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-    margin: 0 auto;
-}
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-
-.hero-section .container {
-    z-index: 10;
-} */
 .hero-section {
   background-image: url("../image/Hero-banner-image.png");
   background-size: cover;
@@ -363,14 +329,63 @@ button.navbar-toggler.collapsed {
 .check-list p img {
   width: 20px;
 }
-/* .check-list .row p::before{
-    content: url("");
-    padding: 20px;
-    background-image: url(/assets/image/check.png);
+
+    /* slick slider */
+    .step-card.card.border-1.mb-4.aos-init.aos-animate{
+        padding-bottom: 10px !important;
+    }
+.slick .item .bg{
+	height:620px;
+	background-position:center;
+	background-size:cover;
+	transition:.3s;
+	margin:0 -24px;
+	opacity:.2;
+	-webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+	transition: all 0.3s ease-in-out;
+}
+.slick .slick-list {
+	padding: 20px 0!important;
+}
+
+.slick .slick-center .bg {
+	opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+}
+.slick-slide {
+    outline: none;
+    min-height: 700px;
+    margin: 0 auto;
+}
+.my-slider .bg{
     background-repeat: no-repeat;
-    padding-right: 10px;
+    background-size: contain;
     background-position: center center;
-} */
+    height: 700px;
+    margin: 0 auto;
+}
+.slick-prev,
+.slick-next {
+	position:absolute;
+	top:50%;
+	 z-index: 1;
+}
+.slick-prev {
+    left: 100px;
+}
+.slick-next {
+    right: 100px;
+}
+.slick-dots li{
+    width: 5px;
+    height: 5px;
+}
+.slick-dots li.slick-active button:before{
+    color: var(--oreng);
+}
+
 /* Scroll Indicator */
 .scroll-indicator {
   animation: bounce 2s infinite;
@@ -1015,6 +1030,9 @@ form#navloRegisterForm {
   .cta-text a img {
     width: 50% !important;
     margin-bottom: 10px;
+  }
+  footer{
+    text-align: center;
   }
 }
 @media (max-width: 576px) {
