@@ -452,7 +452,7 @@ button.navbar-toggler.collapsed {
   width: 150px;
   height: 150px;
   background-color: var(--oreng);
-  border: 6px solid #504f93;
+  border: 6px solid var(--oreng);
   border-radius: 50%;
   opacity: 0.5;
   z-index: 10;
