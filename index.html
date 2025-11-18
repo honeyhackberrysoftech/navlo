@@ -96,43 +96,7 @@
             <button class="btn btn-success register-btn1" onclick="location.href='#contact'">Contact</button>
         </div>
     </nav>
-
-
     <!-- Hero Section -->
-    <!-- <section id="home"
-        class="hero-section position-relative d-flex align-items-center justify-content-center" >
-        <div class="hero-bg container-fluid "></div>
-        <div class="hero-overlay"></div>
-
-        <div class="container text-start text-white position-relative" style="z-index: 10;">
-            <div class="row justify-content-start">
-                <div class="col-lg-10">
-                    <h1 class="display-2 fw-bold mb-1" data-aos="fade-up">
-                        Get Where You Need to
-                    </h1>
-                    <h2 class="display-3 fw-bold mb-4 text-success" data-aos="fade-up" data-aos-delay="200">
-                        Go, Safely and Affordably
-                    </h2>
-                    <p class="lead mb-5 opacity-90" data-aos="fade-up" data-aos-delay="300">
-                        With Navlo, your reliable transportation partner available 24/7. Book your ride in seconds <br>  and
-                        travel with peace of mind.
-                    </p>
-
-                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-start mb-5" data-aos="fade-up"
-                        data-aos-delay="400">
-                        <button class="btn btn-outline-light btn-lg rounded-pill fw-semibold" data-bs-target="#exampleModalToggle"
-      data-bs-toggle="modal">
-                            Registration
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4">
-            <div class="scroll-mouse"></div>
-        </div>
-    </section> -->
     <section class="hero-section">
         <div class="">
             <div class="hero-cantant">
@@ -187,7 +151,32 @@
                     </div>
                 </div>
                 <div class="col-lg-6 ">
-                    <img src="assets/image/user-with-mobile-mockup.png" alt="">
+                    <a href="" data-toggle="modal" data-target="#exampleModal">
+                        <img src="assets/image/user-with-mobile-mockup.png" alt="">
+                    </a>
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            1
+            <video id="myvideo" width="100%" controls>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
                 </div>
             </div>
             <div class="about-us-cantant  align-items-center" data-aos="fade-up" data-aos-delay="100">
@@ -204,7 +193,6 @@
             </div>
         </div>
     </section>
-
     <!-- services section -->
     <section id="services" class="section-services py-5 bg-light">
         <div class="container">
@@ -311,7 +299,6 @@
             </div>
         </div>
     </section>
-
     <!-- Booking Steps Section -->
     <section id="process" class="py-5">
         <div class="container">
@@ -443,115 +430,6 @@
         </div>
         </div>
     </section>
-
-    <!-- <section id="process" class="py-5">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-lg-6">
-                     <div class="mb-5">
-                        <h2 class="display-4 fw-bold mb-4" data-aos="fade-right">
-                            Simple Steps to Book Your Ride
-                        </h2>
-                        <p class="lead text-muted" data-aos="fade-right" data-aos-delay="100">
-                            Getting a ride has never been easier. Follow these simple steps and you'll be on your way.
-                        </p>
-                        </div>
-                    <div class="tabs steps">
-                        <div class="tab active" data-index="0">
-                            <div class="step-card card  border-1 mb-4" data-aos="fade-right" data-aos-delay="200">
-                            <div class="card-body p-4">
-                                <div class="d-lg-flex d-sm-block align-items-start">
-                                    <div class="step-number text-white rounded-circle d-flex align-items-center justify-content-center me-4"
-                                        style="width: 50px; height: 50px;">
-                                        <span class="fw-bold">1</span>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex align-items-center mb-2">
-                                            <h5 class="fw-bold mb-0">SET YOUR DESTINATION</h5>
-                                        </div>
-                                        <p class="text-muted mb-0">Enter your pickup location and destination in our
-                                            easy-to-use app interface.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="tab" data-index="1">
-                            <div class="step-card card  border-1 mb-4" data-aos="fade-right" data-aos-delay="300">
-                            <div class="card-body p-4">
-                                <div class="d-lg-flex d-sm-block align-items-start">
-                                    <div class="step-number text-white rounded-circle d-flex align-items-center justify-content-center me-4"
-                                        style="width: 50px; height: 50px;">
-                                        <span class="fw-bold">2</span>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex align-items-center mb-2">
-                                            <h5 class="fw-bold mb-0">CHOOSE YOUR RIDE</h5>
-                                        </div>
-                                        <p class="text-muted mb-0">Select from our range of vehicles that best suits
-                                            your needs and budget.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="tab" data-index="2">
-                            <div class="step-card card  border-1 mb-4" data-aos="fade-right" data-aos-delay="400">
-                            <div class="card-body p-4">
-                                <div class="d-lg-flex d-sm-block align-items-start">
-                                    <div class="step-number text-white rounded-circle d-flex align-items-center justify-content-center me-4"
-                                        style="width: 50px; height: 50px;">
-                                        <span class="fw-bold">3</span>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex align-items-center mb-2">
-                                            <h5 class="fw-bold mb-0">SECURE PAYMENT</h5>
-                                        </div>
-                                        <p class="text-muted mb-0">Pay securely through the app with your preferred
-                                            payment method.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="tab" data-index="3">
-                            <div class="step-card card  border-1 mb-4" data-aos="fade-right" data-aos-delay="500">
-                            <div class="card-body p-4">
-                                <div class="d-lg-flex d-sm-block align-items-start">
-                                    <div class="step-number text-white rounded-circle d-flex align-items-center justify-content-center me-4"
-                                        style="width: 50px; height: 50px;">
-                                        <span class="fw-bold">4</span>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex align-items-center mb-2">
-                                            <h5 class="fw-bold mb-0">ENJOY YOUR RIDE</h5>
-                                        </div>
-                                        <p class="text-muted mb-0">Sit back and relax while our professional driver gets
-                                            you to your destination.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="image-box">
-                        <img id="displayImage" src="assets/image/single-iphone-mockup.png" alt="slider">
-                    </div>
-      <div class="pagination">
-        <div class="dot active" data-index="0"></div>
-        <div class="dot" data-index="1"></div>
-        <div class="dot" data-index="2"></div>
-        <div class="dot" data-index="3"></div>
-      </div>
-                </div>
-            </div>
-        </div>
-
-    </section> -->
-
     <!-- contact section -->
     <section id="contact" class="contact-section py-5">
         <div class="container">
@@ -613,32 +491,6 @@
         </div>
     </section>
     <!-- App Download Section -->
-    <!-- <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8" data-aos="fade-right">
-                    <h2 class="display-4 fw-bold mb-4">
-                        Ready to Ride with Navlo?
-                    </h2>
-                    <p class="lead mb-4">
-                        Safe, affordable, and available 24/7 — your next journey is just a tap away.
-                    </p>
-
-                </div>
-
-                <div class="col-lg-4" data-aos="fade-left">
-                    <div class="d-flex flex-column flex-sm-row gap-3">
-                        <a href="#" >
-                            <img src="assets/image/App-Store-Download-base-1.svg" alt="">
-                        </a>
-                        <a href="#" >
-                            <img src="assets/image/App-Store-Download-base.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <!-- cta section -->
     <section class="cta-section">
         <div class="container">
