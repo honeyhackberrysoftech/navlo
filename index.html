@@ -56,6 +56,7 @@
     <!-- slick slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -97,7 +98,7 @@
         </div>
     </nav>
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
         <div class="">
             <div class="hero-cantant">
                 <div class="hero-text w-lg-50">
@@ -128,7 +129,7 @@
                 <div class="col-lg-6">
                     <h3>“At Navlo, we’re driven by values that put safety, affordability, and trust at the heart of
                         every ride.”</h3>
-                    <p>At Navlo, we believe that transportation is more than just getting from one place to another -
+                    <p>At Navlo, we believe that transportation is more than just getting from one place to another     
                         it’s about trust, safety, and convenience. Our journey began with a simple mission: to make
                         travel reliable, affordable, and accessible for everyone, anytime.</p>
                     <div class="check-list">
@@ -151,32 +152,14 @@
                     </div>
                 </div>
                 <div class="col-lg-6 ">
-                    <a href="" data-toggle="modal" data-target="#exampleModal">
+                    <!-- <a  class="popup-youtube" href="https://www.youtube.com/watch?v=pBFQdxA-apI">
                         <img src="assets/image/user-with-mobile-mockup.png" alt="">
-                    </a>
-                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            1
-            <video id="myvideo" width="100%" controls>
-              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            </video>
-            
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+                    </a> -->
+                    <!-- <iframe width="660" height="420" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe> -->
+                    <!-- <iframe width="660" height="420" src="https://www.youtube.com/embed/_BURy2_mGZM?si=7JARfFnv1YvYeDX9?autoplay=1&mute=1" style="border-radius: 20px;"></iframe> -->
+                    <video width="100%  " height=""  autoplay muted loop style="border-radius: 20px;">
+                        <source src="assets/image/bus-ride-2.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
             <div class="about-us-cantant  align-items-center" data-aos="fade-up" data-aos-delay="100">
@@ -417,11 +400,15 @@
 
                         <div class="wrapper">
                             <div class="my-slider">
-                                <div class="bg loating-element" style="background-image:url(assets/image/mockup1.png)"></div>
-                                <div class="bg loating-element" style="background-image:url(assets/image/single-iphone-mockup.png)">
+                                <div class="bg loating-element" style="background-image:url(assets/image/mockup1.png)">
                                 </div>
-                                <div class="bg loating-element" style="background-image:url(assets/image/mockup3.png)"></div>
-                                <div class="bg loating-element" style="background-image:url(assets/image/mockup4.png)"></div>
+                                <div class="bg loating-element"
+                                    style="background-image:url(assets/image/single-iphone-mockup.png)">
+                                </div>
+                                <div class="bg loating-element" style="background-image:url(assets/image/mockup3.png)">
+                                </div>
+                                <div class="bg loating-element" style="background-image:url(assets/image/mockup4.png)">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -647,6 +634,7 @@
     <!-- slick slider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <script src="assets/js/script.js"></script>
     <!-- contact form -->
     <script>
@@ -777,72 +765,6 @@
             }
         });
     </script>
-    <!-- <script>
-  const tabs = document.querySelectorAll('.tab');
-  const displayImage = document.getElementById('displayImage');
-  const leftArrow = document.querySelector('.arrow.left');
-  const rightArrow = document.querySelector('.arrow.right');
-    const dots = document.querySelectorAll('.dot');
-
-  const images = [
-    "assets/image/mockup1.png",
-    "assets/image/single-iphone-mockup.png",
-    "assets/image/mockup3.png",
-    "assets/image/mockup4.png"
-  ];
-
-  let currentIndex = 0;
-
-  // Tab click handler
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      currentIndex = parseInt(tab.dataset.index);
-      updateSlider();
-    });
-  });
-
-  // Arrows
-  leftArrow.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    updateSlider();
-  });
-
-  rightArrow.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    updateSlider();
-  });
-
-  function updateSlider() {
-    displayImage.src = images[currentIndex];
-    tabs.forEach(t => t.classList.remove('active'));
-    tabs[currentIndex].classList.add('active');
-  }
-    function updateSlider() {
-    displayImage.src = images[currentIndex];
-
-    tabs.forEach(t => t.classList.remove('active'));
-    dots.forEach(d => d.classList.remove('active'));
-
-    tabs[currentIndex].classList.add('active');
-    dots[currentIndex].classList.add('active');
-  }
-
-  // Tab click
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      currentIndex = parseInt(tab.dataset.index);
-      updateSlider();
-    });
-  });
-
-  // Dot click
-  dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-      currentIndex = parseInt(dot.dataset.index);
-      updateSlider();
-    });
-  });
-</script> -->
 
     <script>
         const tabs = document.querySelectorAll('.tab');
@@ -911,6 +833,18 @@
                         }
                     }
                 ]
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('.popup-youtube, .popup-vimeo').magnificPopup({
+                disableOn: 700,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+                fixedContentPos: false
             });
         });
     </script>

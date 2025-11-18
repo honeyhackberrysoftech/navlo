@@ -328,6 +328,7 @@ button.navbar-toggler.collapsed {
 }
 .check-list p img {
   width: 20px;
+  margin-right: 5px;
 }
 
     /* slick slider */
