@@ -284,7 +284,7 @@ button.navbar-toggler.collapsed {
 /* Hero Section */
 
 .hero-section {
-  background-image: url("../image/Hero-banner-image.png");
+  background-image: url("../image/Hero-banner-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
   width: 1660px;
@@ -597,7 +597,7 @@ button.navbar-toggler.collapsed {
 }
 .cta-section {
   width: 1660px;
-  background-image: url("../image/cta-bg.png");
+  background-image: url("../image/CTA-Banner.webp");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 100px auto;
